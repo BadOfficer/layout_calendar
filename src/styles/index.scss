@@ -8,19 +8,18 @@ $cells-gap: 1px;
 
 body {
   margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .calendar {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   &__list {
     list-style: none;
     margin: 0;
     display: flex;
-    max-width: ($cell-size * 7) + ($cells-gap * 6) + 20;
+    width: ($cell-size * 7) + ($cells-gap * 6) + 20;
     flex-wrap: wrap;
     gap: $cells-gap;
     box-sizing: border-box;
