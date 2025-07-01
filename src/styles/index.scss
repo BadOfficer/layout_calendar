@@ -1,3 +1,5 @@
+@use 'sass:list';
+
 $cell-size: 100px;
 $inline-paddings: 10px;
 $cells-gap: 1px;
@@ -57,7 +59,7 @@ body {
 
   @each $day in $days {
     &--start-day-#{$day} &__day:first-child {
-      margin-left: calculate-margin-left(index($days, $day));
+      margin-left: calculate-margin-left(list.index($days, $day));
     }
   }
 
